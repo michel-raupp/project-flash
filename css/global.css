@@ -85,6 +85,15 @@ code {
   padding: 0 5px;
 }
 
+@media (max-width: 480px) {
+  p,
+  a,
+  a.link,
+  .code-list {
+    font-size: 14px;
+  }
+}
+
 hr {
   display: block;
   width: 100%;
@@ -98,6 +107,7 @@ hr {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 5px;
   overflow-y: scroll;
+  padding-bottom: 20px;
 }
 
 .game-card {
@@ -127,7 +137,6 @@ hr {
 
   p {
     padding: 5px 0;
-    font-size: 20px;
   }
 }
 

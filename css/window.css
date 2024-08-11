@@ -64,6 +64,10 @@ header {
   align-items: center;
   width: 100%;
   padding: 16px;
+
+  a {
+    text-decoration: none !important;
+  }
 }
 
 .logo-container {
