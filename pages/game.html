@@ -1,4 +1,4 @@
-<div class="gameloc" id="ruffle">
+<div class="gameloc">
   <div class="infos">
     <div class="options">
       <input
@@ -64,6 +64,8 @@
       </div>
     </div>
   </div>
+
+  <div id="ruffle"></div>
 </div>
 
 <style>
@@ -73,18 +75,22 @@
     width: 100%;
     align-items: center;
     height: calc(100% + 400px);
+  }
 
-    ruffle-player {
-      width: 100% !important;
-      max-width: 800px;
-      aspect-ratio: 4 / 3;
-    }
+  #ruffle {
+    display: flex;
+    justify-content: center;
   }
 
   @media (max-width: 480px) {
-    .gameloc ruffle-player {
-      transform: rotate(90deg);
-      scale: 1.4;
+    #ruffle {
+      height: 100%;
+      margin-top: 100px;
+      ruffle-player {
+        width: 400px !important;
+        height: 300px !important;
+        transform: rotate(90deg);
+      }
     }
   }
 
