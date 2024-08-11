@@ -11,6 +11,7 @@ const generateGameList = () => {
     // gera a imagem do jogo, buscando pelo nome definido no arquivo games.js, caso não encontre, usa o nome do arquivo do jogo (.swf) como referência
     const img = document.createElement("img");
     img.src = `assets/images/${game.img || game.fileName.replace(".swf", ".webp")}`;
+    img.alt = `imagem do jogo Flash: ${game.name}`;
     card.appendChild(img);
 
     const title = document.createElement("p");
