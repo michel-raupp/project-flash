@@ -172,6 +172,7 @@ nav.header-links a {
 
   .content {
     padding: 10px;
+    overflow-x: hidden;
   }
 
   .logo-container {

@@ -89,6 +89,9 @@
   }
 
   @media (max-width: 480px) {
+    .gameloc {
+      height: calc(100% + 500px);
+    }
     #ruffle {
       height: 100%;
       margin-top: 40px;
@@ -143,6 +146,12 @@
     border: 2px solid var(--grey);
     padding: 10px;
     background-color: var(--lightGrey);
+  }
+
+  @media (max-width: 480px) {
+    label {
+      font-size: 12px;
+    }
   }
 
   label:hover {
