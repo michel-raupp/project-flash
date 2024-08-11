@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root {
+  /* theme 1 */
+  --black: var(--theme_1_black);
+  --white: var(--theme_1_white);
+  --lightGrey: var(--theme_1_lightGrey);
+  --grey: var(--theme_1_grey);
+  --darkGrey: var(--theme_1_darkGrey);
+  --primary: var(--theme_1_primary);
+  --secondary: var(--theme_1_secondary);
+  --terciary: var(--theme_1_terciary);
+  --font: var(--theme_1_font);
+
+  /* theme 1 variables */
+  --theme_1_black: #000;
+  --theme_1_white: #fff;
+  --theme_1_lightGrey: #f2f2f2;
+  --theme_1_grey: #d9d9d9;
+  --theme_1_darkGrey: #9a9a9a;
+  --theme_1_primary: #1b03bb;
+  --theme_1_secondary: #1f999e;
+  --theme_1_terciary: #e0030c;
+  --theme_1_font: "Silkscreen", sans-serif;
+
+  /* theme 2 variables */
+  --theme_2_black: #593777;
+  --theme_2_white: #fff;
+  --theme_2_lightGrey: #ede8f1;
+  --theme_2_grey: #d4c7db;
+  --theme_2_darkGrey: #948f9d;
+  --theme_2_primary: #9e62de;
+  --theme_2_secondary: #80e3e9;
+  --theme_2_terciary: #ff266e;
+  --theme_2_font: "Silkscreen", sans-serif;
+
+  /* theme 3 variables */
+  --theme_3_black: #1c1c23;
+  --theme_3_white: #f0e9dd;
+  --theme_3_lightGrey: #ebe6d8;
+  --theme_3_grey: #d5d0c5;
+  --theme_3_darkGrey: #949089;
+  --theme_3_primary: #ae0f2c;
+  --theme_3_secondary: #393946;
+  --theme_3_terciary: #971a3b;
+  --theme_3_font: "Silkscreen", sans-serif;
+
+  /* theme 4 variables */
+  --theme_4_black: #131923;
+  --theme_4_white: #fff;
+  --theme_4_lightGrey: #efece8;
+  --theme_4_grey: #e0ddda;
+  --theme_4_darkGrey: #9a9a9a;
+  --theme_4_primary: #3d6a02ee;
+  --theme_4_secondary: #868179;
+  --theme_4_terciary: #ff266e;
+  --theme_4_font: "Source Code Pro", monospace;
+
+  /* theme 5 variables */
+  --theme_5_black: #7a1d5c;
+  --theme_5_white: #fff;
+  --theme_5_lightGrey: #f1e8ee;
+  --theme_5_grey: #dbc7d6;
+  --theme_5_darkGrey: #9d8f9a;
+  --theme_5_primary: #de62aa;
+  --theme_5_secondary: #80bae9;
+  --theme_5_terciary: #ff266e;
+  --theme_5_font: "Pixelify Sans", sans-serif;
+}

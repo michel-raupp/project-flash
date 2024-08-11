@@ -1,0 +1,121 @@
+<div>
+  <h2>Sobre</h2>
+  <div class="texts">
+    <p>
+      Esse é um projeto de Single Page Application (SPA) que simula um site de
+      jogos Flash.
+    </p>
+
+    <p>
+      Jogos Flash eram muito populares nos anos 2000 e 2010. Eram jogos leves,
+      que rodavam no navegador e eram fáceis de compartilhar. Esse projeto é uma
+      forma de trazer um pouco dessa nostalgia de volta.
+    </p>
+  </div>
+
+  <hr/>
+
+  <h3>Como foi feito?</h3>
+  <div class="texts">
+    <p>
+      O projeto foi feito somente com HTML, CSS e JavaScript simples, sem o uso
+      de frameworks ou bibliotecas como o React ou Vue.
+    </p>
+
+    <p>
+      Você pode navegar entre as páginas e jogos sem recarregar a página. Isso é
+      feito utilizando JavaScript para interceptar os cliques nos links e fazer
+      requisições (hashchange) para carregar o conteúdo dinamicamente.
+    </p>
+  </div>
+  <hr/>
+
+  <h3>E sobre os jogos Flash?</h3>
+  <div class="texts">
+    <p>
+      O projeto utiliza da biblioteca Ruffle para emular os jogos Flash. A
+      Ruffle é uma biblioteca que interpreta e executa os jogos Flash em tempo
+      de execução.
+    </p>
+
+    <img
+      class="about-img"
+      src="/assets/icons/ruffle-logo.svg"
+      alt="Logo da Ruffle"
+    />
+
+    <a class="link" href="https://ruffle.rs/" target="_blank"
+      >Saiba mais sobre a Ruffle</a
+    >
+
+    <p>
+      Achei também um vídeo com exemplo bem legal de como a Ruffle funciona.
+    </p>
+    <a
+      class="link"
+      href="https://www.youtube.com/watch?v=TJXMGNxex24"
+      target="_blank"
+      >Acessar o vídeo</a
+    >
+  </div>
+
+  <hr/>
+  <h3>Sobre mim</h3>
+  <div class="texts">
+    <p>
+      Olá, sou o <strong>Michel</strong>. Sou um desenolvedor mobile e front-end, tenho experiência com React, React Native,e outras tecnologias. Também atuei como UX/UI Designer e ainda faço um freela aqui ou ali.
+     
+    </p>
+    <a class="link" href="https://www.linkedin.com/in/michelraupp/" target="_blank"
+    >Acessar LinkedIn</a>
+    <a class="link" href="https://michelraupp.com/pt-BR" target="_blank"
+    >Acessar Portifólio</a>
+  </div>
+  <hr/>
+
+  <h3>Como faço para jogar outros jogos Flash?</h3>
+  <div class="texts">
+    <p>
+      Basta clonar esse repositório e adicionar os jogos que deseja jogar na
+      pasta <code>/assets/games</code>. Os jogos devem ser arquivos SWF.
+    </p>
+
+    <p>
+      Após adicionar os jogos, você deve atualizar o arquivo
+      <code>data/games.js</code> com as informações dos jogos adicionados.
+    </p>
+
+    <p>
+      Para adicionar um novo jogo, você deve adicionar um novo objeto no array
+      <code>games</code> com as seguintes informações:
+    </p>
+    <code class="code-list">
+      games: [{id: 1, name: "Nome do jogo", img: "nome-da-imagem.webp", fileName: "nome-do-jogo.swf",},]
+    </code>
+
+  </div>
+</div>
+</div>
+
+<style>
+  .about-img {
+    width: 200px;
+    height: auto;
+  }
+
+  ul {
+    list-style: none;
+    padding: 20px;
+    border: 2px solid var(--primary);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .code-list {
+    padding: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+</style>

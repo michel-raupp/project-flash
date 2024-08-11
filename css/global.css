@@ -1,0 +1,137 @@
+a:not(.game-card) {
+  position: relative;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+    background-color: var(--primary);
+    color: var(--white);
+  }
+}
+
+button {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--grey);
+  box-shadow:
+    4px 0px 0px 0px var(--white) inset,
+    0px 4px 0px 0px var(--white) inset,
+    -4px 0px 0px 0px var(--darkGrey) inset,
+    0px -4px 0px 0px var(--darkGrey) inset;
+  position: relative;
+  font-size: 16px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: none;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    border: 2px dashed var(--black);
+  }
+
+  &:hover:after {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    padding: 10px;
+    font-size: 14px;
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      width: calc(100% - 10px);
+      height: calc(100% - 10px);
+      border: 1px dashed var(--black);
+    }
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+a.link {
+  font-size: 1.2rem;
+  width: fit-content;
+  color: var(--primary);
+}
+
+code {
+  background-color: var(--grey);
+  font-family: var(--font);
+  padding: 0 5px;
+}
+
+hr {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--grey);
+  margin: 48px 0;
+}
+
+#game-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 5px;
+  overflow-y: scroll;
+}
+
+.game-card {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  min-height: 150px;
+  color: var(--black);
+  box-shadow:
+    2px 0px 0px 0px var(--white) inset,
+    0px 2px 0px 0px var(--white) inset,
+    -2px 0px 0px 0px var(--darkGrey) inset,
+    0px -2px 0px 0px var(--darkGrey) inset;
+  position: relative;
+  border: 2px solid transparent;
+  text-decoration: none;
+
+  &:hover {
+    border: 2px solid var(--primary);
+  }
+
+  img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  p {
+    padding: 5px 0;
+    font-size: 20px;
+  }
+}
+
+html > * {
+  font-family: var(--font);
+  color: var(--black);
+}
