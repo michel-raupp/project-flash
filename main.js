@@ -16,9 +16,6 @@ swfobject.embedSWF = function (url, cont, width, height) {
 };
 
 const loadGame = (game) => {
-  // Define a área do jogo no HTML
-  document.getElementById("app").innerHTML = `<div id="ruffle"></div>`;
-
   // Carrega o jogo usando a função embedSWF
   swfobject.embedSWF(`assets/games/${game.fileName}`, "ruffle", 800, 600);
 };
