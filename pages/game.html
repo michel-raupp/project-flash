@@ -1,1 +1,162 @@
-<div id="ruffle" class="gameloc"></div>
+<div class="gameloc" id="ruffle">
+  <div class="infos">
+    <div class="options">
+      <input
+        type="radio"
+        id="how-to-play-toggle"
+        name="info-toggle"
+        class="tab-toggle"
+        checked
+      />
+      <label for="how-to-play-toggle">
+        <img
+          class="icon"
+          src="/assets/icons/help.png"
+          alt="imagem do atalho do Windows 95, o ícone é de um Livro com um ponto de interrogação"
+        />
+        Como jogar?
+      </label>
+
+      <input
+        type="radio"
+        id="infos-toggle"
+        class="tab-toggle"
+        name="info-toggle"
+      />
+      <label for="infos-toggle">
+        <img
+          class="icon"
+          src="/assets/icons/notepad.png"
+          alt="imagem do atalho do Windows 95, o ícone é de um Bloco de Notas"
+        />
+        Mais informações
+      </label>
+    </div>
+
+    <div class="text-container-wrapper">
+      <div class="text-container how-to-play-texts">
+        <p>
+          Após a tela de carregamento, o jogo irá iniciar automaticamente. Cada
+          jogo tem suas próprias regras e controles, então é importante ler as
+          instruções antes de começar a jogar.
+        </p>
+        <p>Para uma melhor experiência, acesse o site com um computador.</p>
+      </div>
+
+      <div class="text-container infos-texts">
+        <p>
+          Caso o jogo tenha algum tipo de <strong>Save</strong>, não se preocupe
+          que o progresso de sua jogatina será salva em seu
+          <strong>localStorage</strong>. Isto é, você poderá retornar ao
+          progresso que estava desde que seja no mesmo dispositivo e que não
+          limpe o cache e(ou) dados de seu navegador!
+        </p>
+
+        <p>
+          É possível acessar algumas funções do Flash Player clicando com o
+          botão direito do mouse dentro da janela do jogo.
+        </p>
+
+        <p>
+          Declaro que não possuo os direitos autorais deste jogo, sendo apenas
+          um projeto de estudos
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .gameloc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: calc(100% + 400px);
+
+    ruffle-player {
+      width: 100% !important;
+      max-width: 800px;
+      aspect-ratio: 4 / 3;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .gameloc ruffle-player {
+      transform: rotate(90deg);
+      scale: 1.4;
+    }
+  }
+
+  .infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .options {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    border: 2px solid var(--grey);
+    padding: 20px;
+    background-color: var(--lightGrey);
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .tab-toggle {
+    display: none;
+  }
+
+  label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid var(--grey);
+    padding: 10px;
+    background-color: var(--lightGrey);
+  }
+
+  label:hover {
+    background-color: var(--grey);
+  }
+
+  .tab-toggle:checked + label {
+    background-color: var(--black);
+    border-color: var(--black);
+    color: white;
+  }
+
+  .infos:has(.options #how-to-play-toggle:not(:checked))
+    .text-container.how-to-play-texts {
+    display: none;
+  }
+
+  .infos:has(.options #infos-toggle:not(:checked)) .text-container.infos-texts {
+    display: none;
+  }
+
+  .infos:has(#how-to-play-toggle:checked) .text-container.how-to-play-texts {
+    display: flex;
+  }
+
+  .infos:has(#infos-toggle:checked) .text-container.infos-texts {
+    display: flex;
+  }
+</style>

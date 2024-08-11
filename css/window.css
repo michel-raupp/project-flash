@@ -137,6 +137,11 @@ nav.header-links a {
   gap: 10px;
 }
 
+#app {
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 768px) {
   .black-bars {
     padding: 16px;
