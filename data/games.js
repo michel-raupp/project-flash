@@ -24,7 +24,7 @@ const games = [
   {
     id: 3,
     name: "Jacksmith",
-    img: "papas_pizzeria.webp",
+    img: "jacksmith.webp",
     fileName: "jacksmith.swf",
   },
 
@@ -68,6 +68,6 @@ const games = [
     id: 10,
     name: "Papa's Burgueria",
     img: "papas_burgeria_v2.webp",
-    fileName: "papas_burgeria_v2.webp",
+    fileName: "papas_burgeria_v2.swf",
   },
 ];
