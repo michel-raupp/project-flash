@@ -23,10 +23,11 @@ const games = [
   },
   {
     id: 3,
-    name: "Papa's Pizzeria",
+    name: "Jacksmith",
     img: "papas_pizzeria.webp",
-    fileName: "papas_pizzeria.swf",
+    fileName: "jacksmith.swf",
   },
+
   {
     id: 4,
     name: "Age of War",
@@ -57,11 +58,16 @@ const games = [
     img: "murder.webp",
     fileName: "murder.swf",
   },
-
   {
     id: 9,
     name: "Zombies Took My Daughter",
     img: "zombies_took_my_daughter.webp",
     fileName: "zombies_took_my_daughter.swf",
+  },
+  {
+    id: 10,
+    name: "Papa's Burgueria",
+    img: "papas_burgeria_v2.webp",
+    fileName: "papas_burgeria_v2.webp",
   },
 ];
